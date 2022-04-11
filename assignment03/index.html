@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- the standard p5 drawing and animation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+               integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"></script>
+
+    <!-- the p5 sound library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- you can also load the p5 library from a local javascript file if you want to host it yourself (uncomment the following 'script' tags)-->
+    <!--script src="../js/p5.js"></script -->
+    <!--script src="../js/p5.sound.min.js"></script -->
+
+    <!-- your custom sketch file -->
+    <script src="sketch.js"></script>
+    <style>
+      body:not(button,ul) {background-color: rgb(249,219,283);
+            text-align: center;
+            border: 100px solid rgb(140, 96, 93);
+            margin-top: 20%auto;
+            margin-bottom: 20%auto;
+            margin-right: 20% auto;
+            margin-left: 50% auto;
+          }
+
+      button {
+            float: right;
+            background-color:rgb(184, 172, 171);
+      }
+
+      ul {
+           text-align:left;
+      }
+
+    </style>
+    <title>PROTECT THE STUFFULS! </title>
+    <h1>Assignment 3, Game created by Chloe Han</h1>
+  </head>
+  <body>
+    <p><b>Hey!</b> I'm Chloe, and I'm currently a student in College of Arts and Sciences at NYU. <br>
+    This is my game website, which I made to introduce the game that was made entirely by myself. <br>
+    It is a simple shooting game, where you move the pointer to aim and remove gastlies that are trying to attack the village of stuffuls.<br>
+    It did not take long for me to come up with this theme since I am a huge fan of pokemon.<br>
+    Although it is a simple game, I'm sure you're gonna enjoy it!</p>
+
+    <br>
+    <br>
+    <br>
+    <h2>How to play</h2>
+
+    <p>
+    <ul>
+      <li>A group of wild gastlies are approaching the village of stuffuls to attack them. Your job is to shoo them away using a weapon called "pokegun". It doesn't kill them, but it scares them away.</li>
+      <li>You need to aim for the gastlies and give them a shot. You can move your aim using W,A,S,D keys, and shot by pressing the space bar.</li>
+      <li>You can keep pressing on your space bar if you want to get rid of them more efficiently.</li>
+      <li>W:up A:left  S:down D:right</li>
+      <li>You have 5 lives. If you let a gastly approach the village, you will lose one life. If you lose all 5 lives, you have failed to protect the village and so game is over.</li>
+    </ul>
+    </p>
+
+
+
+    <a href="index.html">Click here to reload the page</a>
+    <button  onclick="pause()">PAUSE</button>
+    <button  onclick="resume()">RESUME</button>
+    <br><br>
+  </body>
+</html>

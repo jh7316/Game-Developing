@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- p5 core library -->
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+
+		<!-- A-Frame core library -->
+		<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script src="https://craignyu.github.io/aframep5/libraries/aframep5-v2.1.js"></script>
+
+		 <!-- the p5 sound library -->
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<!-- Your p5 Sketch -->
+		<script src="sketch.js"></script>
+
+	</head>
+	<body>
+
+		<!-- container to hold our VR scene -->
+		<a-scene id="VRScene">
+
+		  <!-- container to hold our assets -->
+		  <a-assets id="VRAssets">
+
+        <img src="images/dd.jpg" id="sky2">
+
+		<img id="stonebrick" src="images/stonebrick.png">
+		<img id="universe" src="images/universe.png">
+        <img id="sand" src="images/sand.jpg">
+
+        <a-asset-item id="robot_obj" src="images/robot/model.obj"></a-asset>
+        <a-asset-item id="robot_mtl" src="images/robot/materials.mtl"></a-asset>
+
+          <a-asset-item id="chair_obj" src="images/beach_chair/chair.obj"></a-asset>
+          <a-asset-item id="chair_mtl" src="images/beach_chair/chair.mtl"></a-asset>
+
+        <!-- this single file points to a GLTF model -->
+        <!-- "Shiba" (https://skfb.ly/6WxVW) by zixisun02 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+        <a-asset-item id="dog" src="images/shiba/scene.gltf"></a-asset-item>
+		  </a-assets>
+
+		</a-scene>
+
+	</body>
+</html>
